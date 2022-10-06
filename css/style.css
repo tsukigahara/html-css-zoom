@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 
-.upper {
+.upperbar {
     /* border: 2px solid white; */
     background-color: black;
     width: 100%;
@@ -24,7 +24,7 @@ body {
     padding: 5px;
 }
 
-.upper .button img {
+.upperbar .button img {
     max-width: 15px;
     height: auto;
     vertical-align: middle;
@@ -45,30 +45,56 @@ body {
     overflow-y: auto;
     align-content: flex-start;
 }
-.lower {
+.lowerbar {
     border: 2px solid white;
     background-color: rgb(43, 43, 43);
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     position: fixed;
     bottom: 0;
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 
 .option {
-    width: 30px;
-    height: 30px;
     color: white;
     font-size: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    
 
 }
 .option img {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.option div {
+    font-weight: 600;
+    margin-top: 5px;
 
 }
+
+/* .right-controls {
+    width: 80px;
+    height: 20px;
+    background-color: gray;
+} */
 
 .user-video {
     width: 250px;
@@ -80,6 +106,7 @@ body {
 a {
     text-decoration: none;
 }
+
 .button {
     background-color: rgb(91, 91, 91);
     padding: 4px;
@@ -92,4 +119,21 @@ a {
 
 .button:hover {
     background-color: rgb(52, 52, 52);
+}
+
+.exit {
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.exit:hover {
+    color: white;
+    background-color:red;
+}
+
+.option:hover {
+    background-color: rgb(10, 10, 10) ;
+
 }
